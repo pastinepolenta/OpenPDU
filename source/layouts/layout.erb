@@ -9,12 +9,12 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
     
-    <%= stylesheet_link_tag "global" %>
-    <%= javascript_include_tag  "my" %>
   </head>
   
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <%= yield %>
+    <%= stylesheet_link_tag "global" %>
+    <%= javascript_include_tag  "my" %>
   </body>
 </html>

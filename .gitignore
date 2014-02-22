@@ -15,3 +15,9 @@
 
 # Ignore .DS_store file
 .DS_Store
+
+# Ignore bower files (install them with bower install)
+bower_components
+
+# Ignore vim files
+*.swp

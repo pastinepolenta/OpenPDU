@@ -4,7 +4,7 @@
 function getFromAPI(value){
     var out;
     $.ajax({
-        url: './openpduapi/' + value,
+        url: conf.apibase + value,
         dataType: 'json',
         async: false,
         success: function(data){
@@ -16,13 +16,12 @@ function getFromAPI(value){
 
 function fetchData(){
     console.log("Data fetch started");
-    var globalpower = getFromAPI("globalpower");
-    var globalcurrent = getFromAPI("globalcurrent");
-    $('div[data-global-power]').text(globalpower); 
-    $('div[data-global-current]').text(globalcurrent);   
+    var totalpower = getFromAPI("total" + conf.path.power);
+    var totalcurrent = getFromAPI("total" + conf.path.current);
+    $('div[data-total-power]').text(totalpower); 
+    $('div[data-total-current]').text(totalcurrent);   
 }
 
 $(document).ready(function(){
-    $(document.body).append("<h2>Awesome!</h2>");
     fetchData();
 });
