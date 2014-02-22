@@ -1,0 +1,20 @@
+{
+  "name": "www.openpdu.project",
+  "version": "0.0.0",
+  "authors": [
+    "Mirko Guarnier <mirko.guarnier@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize.scss": "~2.2.0+normalize.2.1.3"
+  }
+}
