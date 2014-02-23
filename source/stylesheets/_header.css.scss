@@ -1,6 +1,32 @@
+header {
+    background: $black;
+    color: $white;
+    padding: $gap;
+}
+
+a.logo {
+    display: inline-block;
+}
+
+img.logo {
+    height: 2.5em;
+    vertical-align: middle;
+}
+
+.monitor.total {
+    color: $black;
+    background: $lime;
+    margin: 0 2em;
+}
+
 .value,
 .unit,
 .power,
 .current {
     display: inline-block;
+}
+
+.power,
+.current {
+    padding: 0 $gap;
 }

@@ -1,15 +1,17 @@
 <header>
-    <a href="#"><div class="logo"></div></a>
-    <div class="monitor total">
-        <div class="data icon">
-            <div class="power">
-                <div class="value" data-total-power></div>
-                <div class="unit">W</div>
-            </div>
-            <div class="current">
-                <div class="value" data-total-current></div>
-                <div class="unit">A</div>
-            </div>
-        </div>
-    </div>
+<a href="#" class="logo">
+    <%= image_tag "logo.svg", :alt=>"Open PDU", :class=>"logo"%>
+</a>
+    <span class="monitor total rounded">
+        <span class="data icon">
+            <span class="power">
+                <span class="value" data-total-power></span>
+                <span class="unit">W</span>
+            </span>
+            <span class="current">
+                <span class="value" data-total-current></span>
+                <span class="unit">A</span>
+            </span>
+        </span>
+    </span>
 </header>

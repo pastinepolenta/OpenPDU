@@ -18,8 +18,8 @@ function fetchData(){
     console.log("Data fetch started");
     var totalpower = getFromAPI("total" + conf.path.power);
     var totalcurrent = getFromAPI("total" + conf.path.current);
-    $('div[data-total-power]').text(totalpower); 
-    $('div[data-total-current]').text(totalcurrent);   
+    $('[data-total-power]').text(totalpower); 
+    $('[data-total-current]').text(totalcurrent);   
 }
 
 $(document).ready(function(){
