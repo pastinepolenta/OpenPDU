@@ -9,7 +9,7 @@ a.logo {
 }
 
 img.logo {
-    height: 2.5em;
+    height: 3.5em;
     vertical-align: middle;
 }
 
@@ -17,6 +17,7 @@ img.logo {
     color: $black;
     background: $lime;
     margin: 0 2em;
+    padding: $gap;
 }
 
 .value,
@@ -29,4 +30,8 @@ img.logo {
 .power,
 .current {
     padding: 0 $gap;
+}
+
+.value {
+    font-size: ms(2);
 }

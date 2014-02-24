@@ -1,3 +1,6 @@
 ---
 title: Dashboard | Open PDU
 ---
+<% 1.upto(8) do |num| %>
+    <%= partial('entity', :locals => {:code => num}) %>
+<% end %>
