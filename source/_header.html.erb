@@ -2,14 +2,14 @@
 <a href="#" class="logo">
     <%= image_tag "logo.svg", :alt=>"Open PDU", :class=>"logo"%>
 </a>
-    <span class="monitor total rounded">
+    <span class="monitor total rounded" ng-controller="totalController">
         <span class="data icon">
             <span class="power">
-                <span class="value" data-total-power></span>
+                <span class="value">{{ totalPower }}</span>
                 <span class="unit">W</span>
             </span>
             <span class="current">
-                <span class="value" data-total-current></span>
+                <span class="value">{{ totalCurrent }}</span>
                 <span class="unit">A</span>
             </span>
         </span>

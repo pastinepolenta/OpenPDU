@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="openPdu">
   <head>
     <meta charset="utf-8">
     
@@ -8,7 +8,13 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-route.min.js"></script>
+    <%= javascript_include_tag  "my_angular" %>
+    <%= javascript_include_tag  "services" %>
+    <%= javascript_include_tag  "controllers" %>
   </head>
   
   <body class="<%= page_classes %>">
@@ -17,6 +23,5 @@
         <%= yield %>
     </div>
     <%= stylesheet_link_tag "global" %>
-    <%= javascript_include_tag  "my" %>
   </body>
 </html>

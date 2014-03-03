@@ -1,0 +1,17 @@
+[
+    {
+        "socket":1,
+        "power":220,
+        "current":1.2
+    },
+    {
+        "socket":2,
+        "power":217,
+        "current":2.9
+    },
+    {
+        "socket":3,
+        "power":221,
+        "current":1.9
+    }
+]
