@@ -1,7 +1,10 @@
 @import "normalize.scss/normalize";
 @import "modular-scale/stylesheets/modular-scale";
-@import "colors", "vars","fonts","header";
+@import "colors", "vars","fonts","header", "socket";
 
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
 
 body {
     font-family: "Titillium web", sans-serif;

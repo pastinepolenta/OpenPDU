@@ -17,7 +17,7 @@
     <%= javascript_include_tag  "controllers" %>
   </head>
   
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %>" ng-controller="totalController">
     <%= partial "header" %>
     <div class="content">
         <%= yield %>

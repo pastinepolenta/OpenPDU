@@ -1,16 +1,19 @@
 [
     {
         "socket":1,
+        "description":"My server",
         "power":220,
         "current":13.2
     },
     {
         "socket":2,
+        "description":"Another server",
         "power":217,
         "current":12.1
     },
     {
         "socket":3,
+        "description":"Super mainframe",
         "power":221,
         "current":10.9
     }
