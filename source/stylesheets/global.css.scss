@@ -14,3 +14,11 @@ body {
 .rounded {
     border-radius: 0.2em;
 }
+
+button {
+    border: none;
+    @extend .rounded;
+    cursor: default;
+    height: 3rem;
+    width: 4rem;
+}

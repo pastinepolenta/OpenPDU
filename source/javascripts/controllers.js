@@ -1,5 +1,6 @@
-angular.module('openPdu.controllers', ['openPdu.services'])
-    .controller('totalController', ['$scope', 'Socket', function($scope, Socket) {
+ var controllers = angular.module('openPdu.controllers', ['openPdu.services']);
+
+ controllers.controller('totalController', ['$scope', 'Socket', function($scope, Socket) {
         
         // Get all the sockets and update the totals
         Socket.query(function(socket){
@@ -11,7 +12,8 @@ angular.module('openPdu.controllers', ['openPdu.services'])
                 $scope.totalCurrent += socket[i].current;
             }
         });
-        
-        // TODO
-        //$scope.socket = Socket.get({socketId: 1});
+}]);
+
+controllers.controller('socketController', ['$scope', function($scope) {
+    $scope.socket;
 }]);

@@ -1,14 +1,4 @@
 ---
 title: Dashboard | Open PDU
 ---
-<div class="socket" ng-repeat-start="socket in sockets">
-    <div class="number">{{ socket.socket }}</div>
-    <div class="data">
-        <div class="button">ON OFF</div>
-        <div class="info">
-            <div class="values">{{ socket.power | number:2 }} {{ socket.current | number:2}}</div>
-            <div class="desc">{{ socket.description }}</div>
-        </div>
-    </div>
-</div>
-<div ng-repeat-end> </div>
+<%= partial "socket" %>

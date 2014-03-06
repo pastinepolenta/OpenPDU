@@ -1,0 +1,17 @@
+<div class="socket" ng-repeat="socket in sockets" ng-model="socket" ng-controller="socketController">
+    <div class="number">{{ socket.socket }}</div>
+    <div class="data">
+        <div class="button">
+            <button class="side off" ng-click="toggle()" ng-class="{selected:socket.status=='off', unselected:socket.status=='on'}">
+                OFF
+            </button>
+            <button class="side on" ng-class="{selected:socket.status=='on', unselected:socket.status=='off'}">
+                ON
+            </button>
+        </div>
+        <div class="info">
+            <div class="values">{{ socket.power | number:2 }} {{ socket.current | number:2}}</div>
+            <div class="desc">{{ socket.description }}</div>
+        </div>
+    </div>
+</div>

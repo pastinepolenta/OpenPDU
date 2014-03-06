@@ -1,7 +1,10 @@
 .socket {
-    width: 50%;
+    width: 48%;
     padding: $gap;
     float: left;
+    border-bottom: 1px dashed $grey;
+    margin: 0 2% 0 0;
+    min-width: 25em;
 }
 
 .number {
@@ -10,11 +13,54 @@
     text-align: center;
     line-height: 5rem;
     font-size: ms(3);
-    width: 5rem;
+    width: 10%;
 }
 
 .data {
     display: inline-block;
     vertical-align: middle;
-    line-height: 2.5rem;
+    width: 89%;
 }
+
+.button {
+    display: inline-block;
+    width: 8.4rem;
+    border: 1px $grey solid;
+    @extend .rounded;
+}
+
+.side {
+    padding: $gap;
+}
+
+.info {
+    display: inline-block;
+    width: 68%;
+}
+
+.on {
+    display: inline-block;
+}
+
+.off {
+    display: inline-block;
+}
+
+.button .selected {
+    @extend .rounded;
+}
+
+.off.selected {
+    background: $red;
+}
+
+.on.selected {
+    background: $lime;
+}
+
+.unselected {
+    color: $grey;
+    cursor: pointer;
+    background: transparent;
+}
+
