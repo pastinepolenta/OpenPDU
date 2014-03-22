@@ -14,6 +14,6 @@ Setup procedure (on Ubuntu 12.04):
 *	Install all the libraries with `bower install`
 *	Compile the code with `middleman server`. This command will also start a server on http://0.0.0.0:4567/ where you should be able to see this app running 
 
-# Usage
+## Usage
 When `middleman server` is started the app will recompile automatically so every change will be visible on the browser.
 Those changes include HTML, JS and SASS
