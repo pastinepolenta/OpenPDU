@@ -1,6 +1,6 @@
-##  OpenPDU
+#  OpenPDU
 
-# Installation and compilation
+## Installation and compilation
 On this repo there are only source files. A compilation must be done in order to get the static files.
 Eventually in the future I will commit also compiled resources. The app uses libraries which must be installed using [Bower](http://bower.io "Bower"). 
 The compilation concerns JS, HTML and CSS code. It is done automatically by [Middleman](http://middlemanapp.com// "Middleman").
