@@ -11,7 +11,7 @@ Setup procedure (on Ubuntu 12.04):
 
 *	Install middleman with `gem install middleman`. On Ubuntu 12.04 it requires to upgrade ruby to 1.9.3 following [this](http://leonard.io/blog/2012/05/installing-ruby-1-9-3-on-ubuntu-12-04-precise-pengolin/)
 
-*	Install all the libraries with `bower install` and `bundle install`
+*	Install all the libraries with `bower install`
 *	Compile the code with `middleman server`. This command will also start a server on http://0.0.0.0:4567/ where you should be able to see this app running 
 
 # Usage
